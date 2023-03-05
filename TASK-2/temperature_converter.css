@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100;
+    background-image:url(temperature_converter.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box{
+    border: solid 2px rgb(41, 21, 14);
+    width: 45vw;
+    height: 50vh;
+    position: absolute;
+    top: 10vw;
+    left: 28vw;
+    text-align: center;
+    background-color: rgb(250, 234, 228);
+    border-radius: 13px 13px 13px 13px;
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+.heading h1{
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.inputtype{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.input input,select{
+    text-align: center;
+    outline: none;
+    width: 15vw;
+    height: 6vh;
+    margin: 5px;
+    border-radius: 13px 13px 13px 13px;
+}
+
+.input input:hover,select:hover{
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.output {
+    height: 9vh;
+}
+.output p{
+    font-size: 50px;
+}
+button{
+    background-color: white;
+    border-color: white;
+    border-style: none;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vh;
+}
+.sub:hover{
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.sub{
+    padding: 1vh;
+    width: 20%;
+    border-radius: 13px 13px 13px 13px;
+    border: 2px solid gray;
+    background-color: #fff;
+}

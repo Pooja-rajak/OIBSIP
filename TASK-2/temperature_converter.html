@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temperature_converter.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+
+            <div class="heading">
+                <h1>
+                    Temperature Converter
+                </h1>
+            </div>
+            <form>
+                <div class="content">
+                    <div class="inputtype">
+                        <div class="input">
+                            <h4>Degree</h4>
+                            <input type="number" id="degree">
+                        </div>
+                        <div class="input">
+                            <h4>Type</h4>
+                            <select name="type" id="convert">
+                                <option value="1">Celsius</option>
+                                <option value="2">Fahrenheit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="result" class="output">
+                        <h4>Result</h4>
+                        <h4 id="res">
+                        </h4>
+                    </div>
+                    <span id="btn" class="submit" onclick="celltofar()">
+                       <div class="sub">
+                           <h5>
+                            Submit
+                           </h5>
+                       </div>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    // function print(){
+    //     document.getElementById("res").innerHTML="do not see with that
+     //much concentration";
+    // }
+    let degree=0;
+     degree = document.getElementById("degree");
+    let convert = document.querySelector('#convert');
+    function celltofar() {
+        if (convert.value == 2) {
+            let output = (parseFloat(degree.value) * 9 / 5) + 32;
+            document.getElementById("res").innerHTML = output+" °F";
+            console.log(convert);
+        } else {
+            let output = (parseFloat((degree.value) - 32) * 5 / 9);
+            document.getElementById("res").innerHTML = output+" °C";
+            console.log(convert);
+        }
+    }
+    // oninput="celltofar()"
+</script>
+
+
+</html>
